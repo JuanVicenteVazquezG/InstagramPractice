@@ -14,7 +14,7 @@ posts = [
             'name': 'Yésica Cortés',
             'picture': 'https://picsum.photos/60/60/?image=1027'
         },
-        'timestamp': datetime.now().strftime('%b %dth, %Y - %H:%M hrs'),
+        'timestamp': datetime.now().strftime('%d/%m/%Y - %H:%M'),
         'photo': 'https://picsum.photos/800/600?image=1036',
     },
     {
@@ -23,7 +23,7 @@ posts = [
             'name': 'Christian Van der Henst',
             'picture': 'https://picsum.photos/60/60/?image=1005'
         },
-        'timestamp': datetime.now().strftime('%b %dth, %Y - %H:%M hrs'),
+        'timestamp': datetime.now().strftime('%d/%m/%Y - %H:%M'),
         'photo': 'https://picsum.photos/800/800/?image=903',
     },
     {
@@ -32,7 +32,7 @@ posts = [
             'name': 'Uriel (thespianartist)',
             'picture': 'https://picsum.photos/60/60/?image=883'
         },
-        'timestamp': datetime.now().strftime('%b %dth, %Y - %H:%M hrs'),
+        'timestamp': datetime.now().strftime('%d/%m/%Y - %H:%M'),
         'photo': 'https://picsum.photos/500/700/?image=1076',
     }
 ]
@@ -40,4 +40,5 @@ posts = [
 
 def list_posts(request):
     """List existing posts."""
-    return render(request, 'feed.html', {'posts': posts})
+    print (posts)
+    return render(request, 'feed.html', {'posts':posts})
