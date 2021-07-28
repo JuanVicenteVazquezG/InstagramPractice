@@ -1,0 +1,2 @@
+# InstagramPractice
+Django Instagram practice
