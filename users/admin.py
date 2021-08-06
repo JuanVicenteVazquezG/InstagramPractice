@@ -7,8 +7,6 @@ from django.contrib import admin
 from django.contrib.auth.models import User 
 from users.models import Profile
 
-
-# Register your models here.
 # We import the profile model to be able to register it in admin and that we can use it in /admin
 @admin.register(Profile)
 class ProfileAdmin(admin.ModelAdmin):
